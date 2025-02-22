@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Trainer - Kris Brown</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>Personal Trainer</h1>
+      <ul>
+        <li><a href="#about">Home</a></li>
+        <li><a href="#courses">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hello, my name is <span>James Davidson</span></h2>
+      <button id="contactBtn">Contact Me</button>
+    </div>
+    <div class="hero-image">
+      <img src="persornalTrainer.jpg" alt="Trainer lifting weights">
+    </div>
+  </section>
+
+  <section id="courses" class="courses">
+    <h2>Courses</h2>
+    <div class="course-list">
+      <div class="course">
+        <h3>Cardio Training</h3>
+        <p>Cardio training is the ultimate way to improve heart health, increase stamina, and burn calories efficiently.
+          As a certified trainer with years of experience, I'll guide you through tailored cardio sessions designed to
+          match your fitness level and help you achieve your goals. Together, we.ll build a stronger, healthier you one
+          heartbeat at a time!</p>
+      </div>
+      <div class="course">
+        <h3>Weightlifting</h3>
+        <p>Weightlifting is not just about building muscle its about boosting your metabolism, toning your body, and
+          mastering proper lifting techniques. I'll create a customized weightlifting program that suits your goals and
+          experience level. Whether you're a beginner or looking to level up, I'll guide you every step of the way to
+          help you unlock your full potential!</p>
+      </div>
+      <div class="course">
+        <h3>Kickboxing</h3>
+        <p>Kickboxing is a high-energy workout that strengthens your body, sharpens your mind, and boosts your
+          confidence. It's a perfect way to burn calories, improve coordination, and relieve stress while learning
+          powerful self-defense techniques. Let's kick your fitness journey into high gear!</p>
+      </div>
+    </div>
+  </section>
+  <section id="contactForm" class="form-section hidden">
+    <button id="closeFormBtn" class="close-btn">X</button>
+    <h2>Take your fitness to the next level</h2>
+    <form>
+      <label for="name">Your name</label>
+      <input type="text" id="name" placeholder="John" required>
+
+      <label for="email">Your email</label>
+      <input type="email" id="email" placeholder="john@example.com" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="Phone" required>
+
+      <label for="course">Please select a course</label>
+      <select id="course">
+        <option value="Cardio Training">Cardio Training</option>
+        <option value="Weightlifting">Weightlifting</option>
+        <option value="Kickboxing">Kickboxing</option>
+      </select>
+
+      <label>Gender</label>
+      <div>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+      </div>
+
+      <label for="feedback">How did you hear about us?</label>
+      <textarea id="feedback" placeholder="Let us know"></textarea>
+
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Take your fitness to the next level!</p>
+  </footer>
+
+  <button id="backToMainBtn">Back to Main Page</button>
+  <script>
+      // Check if the last visited page exists in sessionStorage
+      window.onload = function() {
+          const lastPage = sessionStorage.getItem('lastVisitedPage');
+
+          // If the last visited page exists, set up the back button click event
+          if (lastPage) {
+              document.getElementById('backToMainBtn').onclick = function() {
+                  // Redirect the user to the last visited page (main page)
+                  window.location.href = lastPage;
+              };
+          } else {
+              console.log("No last visited page found.");
+          }
+      };
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+

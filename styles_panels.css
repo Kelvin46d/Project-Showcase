@@ -1,0 +1,427 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+.showcase-container {
+
+  text-align: center;
+  padding: 20px;
+}
+.showcase-container h1 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+a {
+  display: inline-block;
+  padding: 5px;
+  background-color: #a0bdd1;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  border-radius: 55px;
+}
+h1,
+a {
+  color: white;
+}
+.project-panel {
+  background-color: #b90f0f;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #e7e4e4;
+  color: rgb(12, 11, 11);
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-panel:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.project-title {
+  padding: 10px;
+}
+
+.project-title h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+.buttoncontainerOut {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+.showcase-container,
+h1 {
+  color: white;
+}
+p{
+  color: #f0f0f0;
+} */
+
+/* General Styling */
+ 
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+ Header and Logout Button
+.buttoncontainerOut {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background-color: #293404;
+}
+
+.buttoncontainerOut a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.buttoncontainerOut a:hover {
+  background-color: #d3dcc2;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.buttoncontainerOut a:focus {
+  outline: 3px dashed #ff9900; /* Custom focus ring */
+  /* outline-offset: 2px;
+} */
+
+/* Main Container */
+/* .container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #0073e6;
+}
+
+.container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Project Showcase */
+/* .showcase-container {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.showcase-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #0073e6;
+  margin-bottom: 20px;
+}  */
+
+/* Grid Layout */
+/* .showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  /* grid-template-columns: repeat(4,1fr); */
+  /* grid-template-columns: repeat(2,1fr); */
+
+  /* grid-template-columns: 1fr 2fr; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+
+  /* grid-template-columns: 2fr 1fr; */
+  /* grid-template-columns: 1fr 2fr 1fr; */
+
+  /* grid-template-columns: 200px 1fr 2fr; */
+  /* grid-template-columns: 1fr 3fr; */
+
+  /* grid-template-columns: 2fr 6fr 2fr; */
+  /* grid-template-columns: 1fr 5fr 1fr; */
+  /* grid-template-columns: 200px repeat(3, 1fr);  */
+  /* grid-template-columns: 2fr 1fr 3fr;  */
+  /* gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+ 
+} */
+
+/* Project Panels */
+/* .project-panel {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+/* .project-panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-title h2 {
+  font-size: 1.5rem;
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+.container > .project-panel:nth-of-type(1) {
+  background-color: lightblue;
+  color: #161616;
+}
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+} */
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .project-title h2 {
+    font-size: 1.2rem;
+  }
+} */
+/* @keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.project-panel {
+  animation: fadeInUp 0.5s ease;
+}   */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header and Logout Button */
+.buttoncontainerOut {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #293404;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttoncontainerOut a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttoncontainerOut a:hover {
+  background-color: #d3dcc2;
+  color: #293404;
+  transform: scale(1.05);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.buttoncontainerOut a:focus {
+  outline: 3px dashed #ff9900; /* Custom focus ring */
+  outline-offset: 2px;
+}
+
+/* Main Container */
+.container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  /* /max-width: 900px; */
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #293404;
+}
+
+.container p {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Project Showcase */
+.showcase-container {
+  margin: 20px auto;
+  max-width: 2000px;
+  padding: 20px;
+}
+
+.showcase-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border-bottom: 2px solid #b0e500;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Grid Layout */
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Project Panels */
+.project-panel {
+  background-color: #233202;
+  border: 1px solid #141414;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.5s ease;
+}
+
+.project-panel > p {
+  color:white ;
+
+
+}
+.project-panel:hover {
+  transform: translateY(-5px) rotate(-1deg);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-title h2 {
+  font-size: 1.5rem;
+  color: #0073e6;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .project-title h2 {
+    font-size: 1.2rem;
+  }
+
+  .showcase-container h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-panel {
+  animation: fadeInUp 0.5s ease;
+}

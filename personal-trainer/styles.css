@@ -1,0 +1,246 @@
+/* General Reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #3c40c6;
+  padding: 1em 2em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Distributes space between h1 and ul */
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: white;
+}
+
+ul {
+  display: flex;
+  gap: 1.5em; /* Adds spacing between links */
+  margin-left: auto; /* Pushes the navigation links to the far right */
+}
+
+ul li {
+  margin: 0;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+ul li a:hover {
+  text-decoration: underline; /* Optional hover effect */
+}
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between; /* Space between text and image */
+  align-items: center; /* Vertically aligns the content */
+  padding: 2em;
+}
+
+.hero-text {
+  flex: 1; /* Ensures the text takes up available space */
+  margin-right: 2em; /* Adds spacing between text and image */
+}
+
+.hero-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.hero-text span {
+  color: #3c40c6; /* Highlight text color */
+}
+
+.hero-text button {
+  padding: 0.5em 1em;
+  background-color: #3c40c6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-image {
+  flex: 1; /* Ensures the image takes up the available space */
+  text-align: right; /* Aligns the image to the right side */
+}
+
+.hero-image img {
+  max-width: 100%; /* Makes sure the image doesn't overflow */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 10px; /* Optional: Adds rounded corners to the image */
+}
+
+/* Courses Section */
+.courses {
+  padding: 2em;
+  background-color: #1e1e1e;
+  text-align: center;
+}
+
+.courses h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.course-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.course {
+  background-color: #292929;
+  padding: 1em;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.course h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.course p {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+/* Footer */
+footer {
+  background-color: #3c40c6;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+#backToMainBtn {
+  position: fixed; /* Keeps the button in the same place even when scrolling */
+  top: 10px; /* Distance from the top of the viewport */
+  left: 10px; /* Distance from the right of the viewport */
+  padding: 10px 20px; /* Adds space inside the button for better clickability */
+  font-size: 16px; /* Makes text easily readable */
+  background-color: #171818; /* Adds a primary blue color */
+  color: white; /* White text for contrast */
+  border: none; /* Removes default button borders */
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  cursor: pointer; /* Changes cursor to a pointer on hover */
+  z-index: 1000; /* Ensures it stays above other content */
+}
+#backToMainBtn:hover {
+  background-color: #0056b3; /* Slightly darker blue for hover effect */
+}
+
+
+/* Fixed Position Form */
+#contactForm {
+  position: fixed; /* Keeps the form fixed on the screen */
+  bottom: 10px; /* Distance from the bottom of the viewport */
+  left: 10px; /* Distance from the left of the viewport */
+  background-color: #292929; /* Background color for the form */
+  color: white; /* Text color */
+  padding: 1.5em; /* Adds space inside the form */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+  width: 300px; /* Sets a width for the form */
+  z-index: 1000; /* Ensures it stays above other content */
+  display: none; /* Initially hidden, can be toggled via JavaScript */
+}
+
+
+
+#contactForm h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#contactForm label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea,
+#contactForm button {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 0.9em;
+}
+
+#contactForm textarea {
+  resize: none; /* Prevent resizing for cleaner UI */
+}
+
+#contactForm button {
+  background-color: #3c40c6;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#contactForm button:hover {
+  background-color: #0056b3; /* Slightly darker blue for hover */
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px; /* Adjust top distance */
+  right: 10px; /* Adjust right distance */
+  background: #3c40c6;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2px; /* Smaller width */
+  height: 2px; /* Smaller height */
+  font-size: 14px; /* Smaller text size */
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001; /* Ensure the button is above the form content */
+}
+
+.close-btn:hover {
+  background: #121212;
+  color: #3c40c6;
+}

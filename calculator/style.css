@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" sans-serif;
+}
+
+body {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(206, 206, 204);
+}
+
+.container {
+  position:relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+input[type="text"]{
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 25px;
+  background-color: rgb(172, 172, 172);
+  color: rgb(8, 8, 8);
+  
+}
+.button_Cal {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr); 
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+.button_Cal button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1.5em;
+  text-align: center;
+  cursor: pointer;
+  background-color: #eee;
+}
+
+
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.288);
+    color: white;
+
+}
+
+
+.equall {
+  /* background-color: blue; */
+  color: blue;
+} 
+
+
+.equall:hover{
+  background-color:orange;
+
+} 
+#backToMainBtn {
+  position: fixed; /* Keeps the button in the same place even when scrolling */
+  top: 10px;       /* Distance from the top of the viewport */
+  left: 10px;     /* Distance from the right of the viewport */
+  padding: 10px 20px; /* Adds space inside the button for better clickability */
+  font-size: 16px;    /* Makes text easily readable */
+  background-color: #171818; /* Adds a primary blue color */
+  color: white;         /* White text for contrast */
+  border: none;         /* Removes default button borders */
+  border-radius: 8px;   /* Slightly rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  cursor: pointer;      /* Changes cursor to a pointer on hover */
+  z-index: 1000;        /* Ensures it stays above other content */
+}
+#backToMainBtn:hover {
+  background-color: #0056b3; /* Slightly darker blue for hover effect */
+}

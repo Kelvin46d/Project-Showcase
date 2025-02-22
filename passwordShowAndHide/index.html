@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show And Hide Password</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="input-box">
+        <input type="password" placeholder="password" id="password">
+        <img src="eye-close.png" id="eyeicon" alt="eye-close">
+    </div>
+
+
+
+    <button id="backToMainBtn">Back to Main Page</button>
+    <script>
+        // Check if the last visited page exists in sessionStorage
+        window.onload = function() {
+            const lastPage = sessionStorage.getItem('lastVisitedPage');
+
+            // If the last visited page exists, set up the back button click event
+            if (lastPage) {
+                document.getElementById('backToMainBtn').onclick = function() {
+                    // Redirect the user to the last visited page (main page)
+                    window.location.href = lastPage;
+                };
+            } else {
+                console.log("No last visited page found.");
+            }
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

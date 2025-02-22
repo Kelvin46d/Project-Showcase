@@ -1,0 +1,117 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f4f4f4;
+  }
+  
+  .container {
+	width: 90%;
+	max-width: 500px;
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+	margin-bottom: 20px;
+	font-size: 24px;
+	text-align: center;
+	color: #333;
+  }
+  
+  .input-container {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+	flex: 1;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  button {
+	padding: 10px 15px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background-color: #0056b3;
+  }
+  
+  ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 15px;
+	background-color: #f9f9f9;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  .edit-input {
+	width: 100%;
+	padding: 5px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  .actions button {
+	margin-left: 5px;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	color: white;
+  }
+  .edit-btn {
+	background-color: #ffc107;
+  }
+  
+  .edit-btn:hover {
+	background-color: #e0a800;
+  }
+  
+  .delete-btn {
+	background-color: #dc3545;
+  }
+  
+  .delete-btn:hover {
+	background-color: #c82333;
+  }
+  #backToMainBtn {
+    position: fixed; /* Keeps the button in the same place even when scrolling */
+    top: 10px;       /* Distance from the top of the viewport */
+    left: 10px;     /* Distance from the right of the viewport */
+    padding: 10px 20px; /* Adds space inside the button for better clickability */
+    font-size: 16px;    /* Makes text easily readable */
+    background-color: #111111; /* Adds a primary blue color */
+    color: white;         /* White text for contrast */
+    border: none;         /* Removes default button borders */
+    border-radius: 8px;   /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    cursor: pointer;      /* Changes cursor to a pointer on hover */
+    z-index: 1000;        /* Ensures it stays above other content */
+}
+#backToMainBtn:hover {
+    background-color: #0056b3; /* Slightly darker blue for hover effect */
+}

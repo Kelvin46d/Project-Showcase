@@ -1,0 +1,128 @@
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.options {
+    margin-bottom: 15px;
+}
+
+.checkbox-group label {
+    display: block;
+    margin: 5px 0;
+    /* color: #ccc; */
+}
+
+button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#password {
+    border: none;
+    width: 100%;
+    margin-right: 10px;
+    outline: none;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Arrow at the bottom of the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip when copying */
+.tooltip.show .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#backToMainBtn {
+    position: fixed; /* Keeps the button in the same place even when scrolling */
+    top: 10px;       /* Distance from the top of the viewport */
+    left: 10px;     /* Distance from the right of the viewport */
+    padding: 10px 20px; /* Adds space inside the button for better clickability */
+    font-size: 16px;    /* Makes text easily readable */
+    background-color: #007bff; /* Adds a primary blue color */
+    color: white;         /* White text for contrast */
+    border: none;         /* Removes default button borders */
+    border-radius: 8px;   /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    cursor: pointer;      /* Changes cursor to a pointer on hover */
+    z-index: 1000;        /* Ensures it stays above other content */
+  }
+  #backToMainBtn:hover {
+    background-color: #0056b3; /* Slightly darker blue for hover effect */
+  }
+  

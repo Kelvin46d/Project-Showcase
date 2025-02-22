@@ -1,0 +1,139 @@
+/* Global Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #030303;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Signup Container */
+.signup-container {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Heading Styling for Signup */
+.signup-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form Labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Input Fields */
+/* Input Fields */
+input[type="email"],
+input[type="password"],
+button[type="submit"] {
+  width: 100%; /* Ensures the input takes up full width of the container */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+/* Button to Show Password */
+button[type="button"] {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Error Messages */
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+/* Login Container */
+.login-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* Heading Styling for Login */
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form Labels for Login */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Password Container Styling */
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Password Input Styling */
+.password-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Login Button */
+button[type="submit"] {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Sign-Up Prompt
+.signup-prompt {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-prompt a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-prompt a:hover {
+  text-decoration: underline;
+}
+   */

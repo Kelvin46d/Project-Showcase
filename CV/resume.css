@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #1f3a43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: white;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.left_Side {
+  background: rgb(6, 6, 63);
+  padding: 40px;
+}
+
+.profile_Text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.imgPic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.imgPic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile_Text h2 {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.profile_Text h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contactInfo {
+  padding-top: 40px;
+}
+
+.title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.education {
+  margin-top: 40px;
+}
+.contactInfo ul {
+  list-style: none;
+}
+
+.contactInfo ul li {
+  margin: 10px 0;
+  cursor: pointer;
+  color: white;
+}
+
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #40c5f2;
+}
+
+.contactInfo ul li span a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+.education ul li {
+  margin-bottom: 15px;
+  color: white;
+}
+
+.education h5 {
+  color: #0fb2e0;
+  font-weight: 500;
+}
+
+.education h4 {
+  color: white;
+  font-weight: 300;
+}
+
+.education ul {
+  list-style: none; /* Remove bullet points for education section */
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.right_Side {
+  background: rgb(255, 255, 249);
+  padding: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.title-2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #333;
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .company_work {
+  min-width: 150px;
+}
+
+.about .box .company_work h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 500;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #40c5f2;
+  font-size: 16px;
+}
+
+.skills .box {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.skills .box h4 {
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 500;
+}
+
+.skills .box .level {
+  width: 100%;
+  height: 10px;
+  background: #d3cdcd;
+}
+
+.skills .box .level div {
+  height: 100%;
+  background: rgb(27, 107, 220);
+}
+
+.references p {
+  font-size: 16px;
+  color: #333;
+}
+
+.references .reference p strong {
+  font-weight: 600;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+
+  .left_Side,
+  .right_Side {
+    padding: 20px;
+  }
+
+  .profile_Text h2 {
+    font-size: 1.2em;
+  }
+
+  .contactInfo ul li {
+    font-size: 14px;
+  }
+
+  .about .box {
+    flex-direction: column;
+  }
+
+  .skills .box {
+    grid-template-columns: 1fr;
+  }
+
+  .skills .box h4 {
+    font-size: 14px;
+  }
+}
+
+/* Printable Media Query */
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 12px;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    display: block;
+  }
+
+  .left_Side,
+  .right_Side {
+    padding: 10px;
+  }
+
+  .profile_Text h2 {
+    font-size: 1.2em;
+  }
+
+  .contactInfo ul li {
+    font-size: 12px;
+  }
+
+  .about .box {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .skills .box {
+    display: block;
+  }
+
+  .skills .box .level {
+    height: 8px;
+  }
+
+  .skills .box .level div {
+    height: 100%;
+  }
+
+  .references p {
+    font-size: 12px;
+  }
+
+  .imgPic img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about,
+  .skills,
+  .references {
+    page-break-before: always;
+  }
+}

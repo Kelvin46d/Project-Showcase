@@ -1,0 +1,115 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="openModal">Open Modal</button>
+
+    Modal Structure
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+            <p>This is a simple modal popup example.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enhanced Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button id="openModal" class="open-btn">Open Modal</button>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button class="close" aria-label="Close Modal">&times;</button>
+            <h2 id="modalTitle">Enhanced Modal Box</h2>
+            <p>This is an improved modal popup with better design and accessibility.</p>
+            <button id="actionButton" class="action-btn">Take Action</button>
+        </div>
+    </div>
+
+    <button id="backToMainBtn">Back to Main Page</button>
+    <script>
+        // Check if the last visited page exists in sessionStorage
+        window.onload = function() {
+            const lastPage = sessionStorage.getItem('lastVisitedPage');
+
+            // If the last visited page exists, set up the back button click event
+            if (lastPage) {
+                document.getElementById('backToMainBtn').onclick = function() {
+                    // Redirect the user to the last visited page (main page)
+                    window.location.href = lastPage;
+                };
+            } else {
+                console.log("No last visited page found.");
+            }
+        };
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Design </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup"  id="popup">
+            <img src="./404-tick.png" alt="tick-png">
+            <h2>Thank You!</h2>
+            <p>You have successfully submitted your details.Our team will get back to you shortly!</p>
+       <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+    <button id="backToMainBtn">Back to Main Page</button>
+    <script>
+        // Check if the last visited page exists in sessionStorage
+        window.onload = function() {
+            const lastPage = sessionStorage.getItem('lastVisitedPage');
+  
+            // If the last visited page exists, set up the back button click event
+            if (lastPage) {
+                document.getElementById('backToMainBtn').onclick = function() {
+                    // Redirect the user to the last visited page (main page)
+                    window.location.href = lastPage;
+                };
+            } else {
+                console.log("No last visited page found.");
+            }
+        };
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html> -->

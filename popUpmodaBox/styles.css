@@ -1,0 +1,236 @@
+/* Modal styles */
+/*.modal {
+    display: none;  Hidden by default 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);  Black with opacity 
+}
+*/
+/* Modal content box */
+/* .modal-content {
+    background-color: white;
+    margin: 15% auto; Center the modal
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s;
+} */
+
+/* Close button
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+} */
+
+/* .close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+} */
+
+/* Animation */
+/* @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */
+
+/* Base styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f7f9fc;
+}
+
+/* Open button styling */
+.open-btn {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.open-btn:hover {
+  background: #0056b3;
+}
+
+/* Modal overlay */
+.modal {
+  display: none; /*  Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /*  Semi-transparent black */
+  overflow: hidden;
+}
+
+/* Modal content box */
+.modal-content {
+  background: #ffffff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: slideDown 0.4s ease-out;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: #333;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #007bff;
+}
+
+/* Action button */
+.action-btn {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+  background: #1e7e34;
+}
+
+/* Animation for modal content */
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(218, 206, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 10px 60px;
+  background: #fff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+.popup {
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+
+}
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+} */
+
+#backToMainBtn {
+  position: fixed; /* Keeps the button in the same place even when scrolling */
+  top: 10px; /* Distance from the top of the viewport */
+  left: 10px; /* Distance from the right of the viewport */
+  padding: 10px 20px; /* Adds space inside the button for better clickability */
+  font-size: 16px; /* Makes text easily readable */
+  background-color: #007bff; /* Adds a primary blue color */
+  color: white; /* White text for contrast */
+  border: none; /* Removes default button borders */
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  cursor: pointer; /* Changes cursor to a pointer on hover */
+  z-index: 1000; /* Ensures it stays above other content */
+}
+#backToMainBtn:hover {
+  background-color: #0056b3; /* Slightly darker blue for hover effect */
+}
