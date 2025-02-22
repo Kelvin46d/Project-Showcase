@@ -1,0 +1,140 @@
+/* Base styling */
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+} */
+
+/* Main container */
+.login-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #f4f4f9; */
+}
+
+/* Login container */
+.log-in-container {
+  /* background-color: #fff; */
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Header and Navigation */
+/* .nav-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 20px;
+}
+
+.nav-header-container a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.nav-header-container a:hover {
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: 2px solid #007bff;
+} */
+
+/* Logo styling */
+.logo-container img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Header styling */
+.header-container h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Form styling */
+.login-form label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Checkbox styling */
+.login-form label[for="check-me"] {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Link styling */
+.b a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.b a:hover {
+  text-decoration: underline;
+}
+
+/* Button styling */
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color:#45a049;
+}
+#error-message {
+  display: none;
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid red;
+  background-color: #f8d7da;
+  border-radius: 5px;
+}
+
+/* Class to show the error message */
+#error-message.visible {
+  display: block;
+}

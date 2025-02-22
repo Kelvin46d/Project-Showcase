@@ -1,0 +1,269 @@
+/* Global Styles
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#f4f4f9;
+  color: #333;
+
+} */
+
+/* Header and Navigation */
+/* .nav-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 20px;
+}
+
+.nav-header-container a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.nav-header-container a:hover {
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: 2px solid #007bff;
+} */
+
+/* Wrapper to center .main-container */
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: #f0f2f5; */
+  padding: 20px;
+}
+
+/* Centered Main Container */
+.main-container {
+  max-width: 750px;
+  width: 100%;
+  padding: 60px;
+  background-color: #dad6d6;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.main-container:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+/* Header Styling */
+.get-quote-header-container h1 {
+  text-align: center;
+  color: #004d73;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Form Container */
+.form-quote-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px;
+}
+
+/* Label Styling */
+.form-quote-container label {
+  font-weight: 600;
+  color: #444;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+
+.success {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+  background-color: #e7f7e7;
+  padding: 20px;
+  border: 1px solid #d4edda;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #155724;
+  width: auto;
+  max-width: 300px; 
+  z-index: 1000; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Error Message Style - Position on the bottom Side */
+.error {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;  
+  background-color: #f8d7da;
+  padding: 20px;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #721c24;
+  width: auto;
+  max-width: 300px; 
+  z-index: 1000; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+/* Input Field Styling */
+.form-quote-container input[type="text"],
+.form-quote-container input[type="number"],
+.form-quote-container input[type="date"],
+.form-quote-container input[type="time"],
+.form-quote-container select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #555;
+  transition: all 0.3s ease;
+
+}
+.form-quote-container input[type="text"]:focus,
+.form-quote-container input[type="number"]:focus,
+.form-quote-container input[type="date"]:focus,
+.form-quote-container input[type="time"]:focus,
+.form-quote-container select:focus {
+  border-color: #0079a1;
+  box-shadow: 0 0 5px rgba(0, 121, 161, 0.2);
+  outline: none;
+}
+
+/* Two-column Layouts */
+.email-phone-container,
+.div-Passgers-container,
+.dateofTravel-container,
+.depart-from-container,
+.return-date-container {
+  display: flex;
+  gap: 10px;
+}
+
+.div-Passgers-container,.push-down {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.dateofTravel-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.email-phone-container, .push-down  {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.depart-from-container,.push-down {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+
+}
+.return-date-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+
+}
+/* Radio Button Styling */
+.form-quote-container input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #004d73;
+}
+
+/* Error Styling */
+.error {
+  border: 1px solid red;
+}
+
+.success {
+  display: block;
+  background-color: #e7f7e7;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid #d4edda;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #155724;
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.errorMessage {
+  display: block;
+  background-color: #f8d7da;
+  margin: 20px 0;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #721c24;
+}
+
+span[id$="-error"] {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  padding: 14px;
+  background-color: #004d73;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 77, 115, 0.2);
+}
+
+button[type="submit"]:hover {
+  background-color: #006b8f;
+  box-shadow: 0 6px 14px rgba(0, 77, 115, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .email-phone-container,
+  .div-Passgers-container,
+  .dateofTravel-container,
+  .depart-from-container,
+  .return-date-container {
+    flex-direction: column;
+  }
+}

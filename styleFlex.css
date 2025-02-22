@@ -1,0 +1,14 @@
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    background-color: aquamarine;
+}
+button:hover{
+    background-color: blue;
+
+}
+button:disabled{
+    background-color: grey;
+}

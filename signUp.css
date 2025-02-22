@@ -1,0 +1,163 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f9;
+}
+
+
+/* Header and Navigation */
+/* .nav-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 20px;
+}
+
+.nav-header-container a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.nav-header-container a:hover {
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: 2px solid #007bff;
+}  */
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.signUp-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Logo Styling */
+.logo-container img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Header Styling */
+.header-container-1 h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.signUp-form label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0 5px;
+}
+
+.signUp-form input[type="text"],
+.signUp-form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.signUp-form input[type="text"]:focus,
+.signUp-form input[type="password"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Button Styling */
+#signUP-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#signUP-button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+#signUP-button:hover:enabled {
+  background-color: #45a049;
+}
+
+#password-mismatch-message {
+  color: red;
+  display: none;
+}
+
+.error-container {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.error-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.error-container li {
+  color: #721c24;
+}
+
+/* Login Link Styling */
+.signUp-form div {
+  font-size: 14px;
+  color: #333;
+  margin-top: 15px;
+}
+
+.signUp-form div a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.signUp-form div a:hover {
+  text-decoration: underline;
+}
